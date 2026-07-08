@@ -410,8 +410,27 @@ html, body {
 
 @media (min-width: 992px) {
     .btn-booking {
-        padding: 1rem 1.5rem;
-        font-size: 15px;
+        padding: 0 .9rem;
+        height: 46px;
+        line-height: 46px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    /* Ensure navbar items are vertically centered */
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        align-items: center;
     }
 }
 
