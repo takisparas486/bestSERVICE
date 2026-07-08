@@ -381,3 +381,36 @@
     padding-right: 0;
     border-right: none;
 }
+
+/* --- Mobile / responsiveness fixes --- */
+/* Prevent horizontal scrolling on small devices */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Make navbar logo responsive */
+.navbar-brand img {
+    height: 64px;
+    max-width: 100%;
+    width: auto;
+}
+
+/* Booking button visible on all sizes and responsive padding */
+.btn-booking {
+    display: inline-block !important;
+}
+
+@media (max-width: 991.98px) {
+    .btn-booking {
+        padding: .5rem 1rem;
+        margin-top: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-booking {
+        padding: 1rem 1.5rem;
+        font-size: 15px;
+    }
+}
