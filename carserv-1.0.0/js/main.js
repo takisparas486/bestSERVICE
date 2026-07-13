@@ -84,6 +84,17 @@
     });
 
 
+    // Set active navbar link based on current page
+    var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    $('.navbar-nav .nav-link').removeClass('active');
+    $('.navbar-nav .nav-link').each(function () {
+        var href = $(this).attr('href');
+        if (href === currentPath) {
+            $(this).addClass('active');
+        }
+    });
+
+
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
