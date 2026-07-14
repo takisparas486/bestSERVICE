@@ -1,0 +1,32 @@
+# robots.txt for Best Service - Πειραιά
+# Συνεργείο Mercedes, Smart, BMW, Mini
+
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /service.html
+Allow: /contact.html
+Allow: /booking.html
+Allow: /team.html
+Allow: /testimonial.html
+Allow: /css/
+Allow: /img/
+Allow: /js/
+Allow: /lib/
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://www.auto-bestservice.gr/sitemap.xml
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Delay between requests (in seconds)
+Crawl-delay: 1
